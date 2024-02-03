@@ -1,0 +1,127 @@
+*{
+    font-family:'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    background-image: url(./pattern-background-desktop.svg);
+    background-color: hsl(225, 100%, 98%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame{
+    height: auto;
+    width: 372px;
+    border-radius: 20px;
+    background: white;
+    box-shadow:  0.1px 0.1px 2px #e2e2e2,
+             -0.1px -0.1px 50px #e2e2e2;
+}
+
+.frame .image img{
+    width: 372px;
+    border-radius: 20px 20px 0 0;
+}
+
+.frame .head {
+    text-align: center;
+    margin: 35px 20px 20px 20px;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.frame .para {
+    text-align: center;
+    margin: 20px 50px 20px 50px;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.frame .button{
+    color: aliceblue;
+    background-color: hsl(245, 75%, 52%);
+    text-align: center;
+    margin: 20px 40px 20px 40px;
+    border-radius: 10px;
+    padding: 15px 0 15px 0;
+    font-size: 18px;
+    font-weight:700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    box-shadow: 1px 20px 20px 0.1px #e0e4f0;
+}
+
+.frame .button:hover {
+    background-color: hsl(223, 47%, 23%);;
+}
+
+.frame .tag{
+    text-align: center;
+    font-size: 18px;
+    margin: 20px;
+    font-weight:700;
+}
+
+.frame .slot{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 20px 40px 20px 40px ;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+}
+
+.price p1 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.price p{
+    margin: 0%;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.price{
+    margin-right: 50px;
+}
+
+.frame .tag {
+    margin-bottom: 40px;
+}
+
+.frame .tag a{
+   text-decoration: none;
+   color: hsl(224, 23%, 55%);
+}
+
+
+.tag a:hover{
+    color: hsl(223, 47%, 23%);
+}
+.change a{
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.change a:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+@media (max-width:650px){
+  body{
+    background-image: url(./pattern-background-mobile.svg);
+  }
+}
